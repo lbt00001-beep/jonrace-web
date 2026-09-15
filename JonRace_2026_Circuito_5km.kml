@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>JonRace 2026 - Circuito 5 km Montecarmelo</name>
+  <description>Circuito cerrado de 5 km. 50% carril bici asfaltado + 50% sendero de tierra junto a las vias. Sabado 19 de septiembre de 2026.</description>
+  <Style id="rutaJonRace">
+    <LineStyle>
+      <color>ff5e3ff4</color>
+      <width>5</width>
+    </LineStyle>
+  </Style>
+  <Placemark>
+    <name>Recorrido JonRace 5 km (1 vuelta)</name>
+    <description>Trazado exacto de la vuelta de 5 km.</description>
+    <styleUrl>#rutaJonRace</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+            -3.70314,40.50901,0
+            -3.70260,40.50970,0
+            -3.70165,40.51080,0
+            -3.70010,40.51210,0
+            -3.69800,40.51340,0
+            -3.69580,40.51450,0
+            -3.69410,40.51560,0
+            -3.69290,40.51670,0
+            -3.69190,40.51780,0
+            -3.69120,40.51870,0
+            -3.69105,40.51925,0
+            -3.69145,40.51950,0
+            -3.69220,40.51930,0
+            -3.69250,40.51860,0
+            -3.69370,40.51720,0
+            -3.69550,40.51580,0
+            -3.69760,40.51440,0
+            -3.69990,40.51300,0
+            -3.70180,40.51150,0
+            -3.70320,40.51000,0
+            -3.70470,40.50860,0
+            -3.70610,40.50710,0
+            -3.70730,40.50550,0
+            -3.70840,40.50390,0
+            -3.70930,40.50230,0
+            -3.70990,40.50090,0
+            -3.71010,40.50035,0
+            -3.70950,40.50025,0
+            -3.70880,40.50100,0
+            -3.70770,40.50250,0
+            -3.70640,40.50420,0
+            -3.70500,40.50590,0
+            -3.70390,40.50740,0
+            -3.70340,40.50850,0
+            -3.70314,40.50901,0
+      </coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Salida y Meta - Parque de las Setas</name>
+    <description>Punto de encuentro (11:00 h) y salida (11:15 h). Fuente del Anillo Verde Ciclista, junto al Colegio Aleman.</description>
+    <Point><coordinates>-3.70314,40.50901,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>Parroquia Santa Maria la Blanca</name>
+    <description>Misa voluntaria previa a las 10:00 h.</description>
+    <Point><coordinates>-3.69382,40.51465,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>Colegio Aleman de Madrid</name>
+    <description>Referencia de acceso y aparcamiento.</description>
+    <Point><coordinates>-3.70240,40.50950,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>Puente Norte - Giro</name>
+    <description>Punto mas al norte: se cruza el puente y se toma el camino de tierra junto a las vias.</description>
+    <Point><coordinates>-3.69120,40.51920,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>Giro Sur</name>
+    <description>Retorno antes de la rotonda sur; se cruza de nuevo al carril bici asfaltado.</description>
+    <Point><coordinates>-3.71000,40.50050,0</coordinates></Point>
+  </Placemark>
+</Document>
+</kml>
