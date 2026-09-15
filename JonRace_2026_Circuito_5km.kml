@@ -2,82 +2,142 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
   <name>JonRace 2026 - Circuito 5 km Montecarmelo</name>
-  <description>Circuito cerrado de 5 km. 50% carril bici asfaltado + 50% sendero de tierra junto a las vias. Sabado 19 de septiembre de 2026.</description>
+  <description>Recorrido oficial de 5,0 km. Salida en el Parque de las Setas, Via Verde de Colmenar hacia el noreste hasta el giro, regreso por el camino de tierra dejando la via a la derecha hasta el giro suroeste, y vuelta por la Via Verde hasta meta. Sabado 19 de septiembre de 2026.</description>
   <Style id="rutaJonRace">
-    <LineStyle>
-      <color>ff5e3ff4</color>
-      <width>5</width>
-    </LineStyle>
+    <LineStyle><color>ff5e3ff4</color><width>5</width></LineStyle>
   </Style>
   <Placemark>
     <name>Recorrido JonRace 5 km (1 vuelta)</name>
-    <description>Trazado exacto de la vuelta de 5 km.</description>
+    <description>Trazado oficial ajustado a los caminos reales.</description>
     <styleUrl>#rutaJonRace</styleUrl>
-    <LineString>
-      <tessellate>1</tessellate>
-      <coordinates>
-            -3.70314,40.50901,0
-            -3.70260,40.50970,0
-            -3.70165,40.51080,0
-            -3.70010,40.51210,0
-            -3.69800,40.51340,0
-            -3.69580,40.51450,0
-            -3.69410,40.51560,0
-            -3.69290,40.51670,0
-            -3.69190,40.51780,0
-            -3.69120,40.51870,0
-            -3.69105,40.51925,0
-            -3.69145,40.51950,0
-            -3.69220,40.51930,0
-            -3.69250,40.51860,0
-            -3.69370,40.51720,0
-            -3.69550,40.51580,0
-            -3.69760,40.51440,0
-            -3.69990,40.51300,0
-            -3.70180,40.51150,0
-            -3.70320,40.51000,0
-            -3.70470,40.50860,0
-            -3.70610,40.50710,0
-            -3.70730,40.50550,0
-            -3.70840,40.50390,0
-            -3.70930,40.50230,0
-            -3.70990,40.50090,0
-            -3.71010,40.50035,0
-            -3.70950,40.50025,0
-            -3.70880,40.50100,0
-            -3.70770,40.50250,0
-            -3.70640,40.50420,0
-            -3.70500,40.50590,0
-            -3.70390,40.50740,0
-            -3.70340,40.50850,0
-            -3.70314,40.50901,0
-      </coordinates>
-    </LineString>
+    <LineString><tessellate>1</tessellate><coordinates>
+            -3.70335,40.50904,0
+            -3.70307,40.50902,0
+            -3.70293,40.50906,0
+            -3.70274,40.50923,0
+            -3.70250,40.50954,0
+            -3.70234,40.50968,0
+            -3.70187,40.50993,0
+            -3.70175,40.50997,0
+            -3.70133,40.51003,0
+            -3.70043,40.51040,0
+            -3.69934,40.51095,0
+            -3.69896,40.51112,0
+            -3.69795,40.51168,0
+            -3.69752,40.51181,0
+            -3.69697,40.51205,0
+            -3.69627,40.51232,0
+            -3.69613,40.51246,0
+            -3.69517,40.51258,0
+            -3.69461,40.51276,0
+            -3.69434,40.51290,0
+            -3.69415,40.51294,0
+            -3.69356,40.51298,0
+            -3.69200,40.51338,0
+            -3.69120,40.51383,0
+            -3.68987,40.51423,0
+            -3.68927,40.51449,0
+            -3.68900,40.51463,0
+            -3.68841,40.51472,0
+            -3.68778,40.51487,0
+            -3.68727,40.51488,0
+            -3.68692,40.51498,0
+            -3.68682,40.51496,0
+            -3.68737,40.51501,0
+            -3.68775,40.51500,0
+            -3.68857,40.51487,0
+            -3.68899,40.51474,0
+            -3.68949,40.51471,0
+            -3.69014,40.51445,0
+            -3.69058,40.51434,0
+            -3.69110,40.51427,0
+            -3.69136,40.51416,0
+            -3.69227,40.51389,0
+            -3.69290,40.51373,0
+            -3.69343,40.51360,0
+            -3.69461,40.51343,0
+            -3.69628,40.51294,0
+            -3.69679,40.51275,0
+            -3.69745,40.51255,0
+            -3.69907,40.51177,0
+            -3.69981,40.51135,0
+            -3.70032,40.51112,0
+            -3.70052,40.51100,0
+            -3.70070,40.51084,0
+            -3.70082,40.51081,0
+            -3.70086,40.51082,0
+            -3.70172,40.51046,0
+            -3.70260,40.50998,0
+            -3.70330,40.50964,0
+            -3.70370,40.50940,0
+            -3.70391,40.50934,0
+            -3.70467,40.50895,0
+            -3.70587,40.50840,0
+            -3.70776,40.50745,0
+            -3.70870,40.50694,0
+            -3.70888,40.50681,0
+            -3.70940,40.50662,0
+            -3.70994,40.50638,0
+            -3.71021,40.50617,0
+            -3.71050,40.50600,0
+            -3.71109,40.50582,0
+            -3.71226,40.50521,0
+            -3.71261,40.50498,0
+            -3.71233,40.50480,0
+            -3.71166,40.50509,0
+            -3.71081,40.50537,0
+            -3.71061,40.50538,0
+            -3.71029,40.50533,0
+            -3.71010,40.50533,0
+            -3.71002,40.50562,0
+            -3.70992,40.50582,0
+            -3.70973,40.50604,0
+            -3.70943,40.50624,0
+            -3.70904,40.50638,0
+            -3.70782,40.50695,0
+            -3.70707,40.50726,0
+            -3.70693,40.50737,0
+            -3.70681,40.50755,0
+            -3.70669,40.50765,0
+            -3.70658,40.50769,0
+            -3.70621,40.50769,0
+            -3.70583,40.50775,0
+            -3.70575,40.50779,0
+            -3.70536,40.50811,0
+            -3.70515,40.50818,0
+            -3.70464,40.50828,0
+            -3.70424,40.50853,0
+            -3.70374,40.50874,0
+            -3.70364,40.50882,0
+            -3.70354,40.50897,0
+            -3.70347,40.50903,0
+            -3.70342,40.50904,0
+      </coordinates></LineString>
   </Placemark>
   <Placemark>
     <name>Salida y Meta - Parque de las Setas</name>
-    <description>Punto de encuentro (11:00 h) y salida (11:15 h). Fuente del Anillo Verde Ciclista, junto al Colegio Aleman.</description>
-    <Point><coordinates>-3.70314,40.50901,0</coordinates></Point>
+    <description>Punto de encuentro (11:00 h) y salida (11:15 h). Fuente del Anillo Verde Ciclista.</description>
+    <Point><coordinates>-3.70334,40.50906,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>Parroquia Santa Maria la Blanca</name>
-    <description>Misa voluntaria previa a las 10:00 h.</description>
-    <Point><coordinates>-3.69382,40.51465,0</coordinates></Point>
+    <description>Misa voluntaria previa, a las 10:00 h.</description>
+    <Point><coordinates>-3.69645,40.51170,0</coordinates></Point>
   </Placemark>
   <Placemark>
     <name>Colegio Aleman de Madrid</name>
     <description>Referencia de acceso y aparcamiento.</description>
-    <Point><coordinates>-3.70240,40.50950,0</coordinates></Point>
+    <Point><coordinates>-3.70435,40.50796,0</coordinates></Point>
   </Placemark>
   <Placemark>
-    <name>Puente Norte - Giro</name>
-    <description>Punto mas al norte: se cruza el puente y se toma el camino de tierra junto a las vias.</description>
-    <Point><coordinates>-3.69120,40.51920,0</coordinates></Point>
+    <name>Giro Este - Via Verde Colmenar</name>
+    <description>Extremo noreste: aqui se da la vuelta y se toma el camino de tierra, dejando la via a la derecha.</description>
+    <Point><coordinates>-3.68679,40.51494,0</coordinates></Point>
   </Placemark>
   <Placemark>
-    <name>Giro Sur</name>
-    <description>Retorno antes de la rotonda sur; se cruza de nuevo al carril bici asfaltado.</description>
-    <Point><coordinates>-3.71000,40.50050,0</coordinates></Point>
+    <name>Giro Oeste - Camino de tierra</name>
+    <description>Extremo suroeste: se da la vuelta y se vuelve por la Via Verde hasta la meta.</description>
+    <Point><coordinates>-3.71259,40.50500,0</coordinates></Point>
   </Placemark>
 </Document>
 </kml>
