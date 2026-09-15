@@ -76,6 +76,8 @@
       border-radius: 1.5rem;
       z-index: 10;
     }
+    #map { width: 100%; height: 380px; }
+    @media (min-width: 640px) { #map { height: 500px; } }
     .custom-marker-pin {
       display: flex;
       align-items: center;
@@ -363,7 +365,7 @@
         <button onclick="locateUserGps()" id="gpsBtn" class="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-sky-400 text-xs font-bold shadow-lg">
           <span id="gpsText">📍 GPS en Vivo</span>
         </button>
-        <a href="https://maps.app.goo.gl/TXNU6DGqa3mbuwY38?g_st=iw" target="_blank" class="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-lg">
+        <a href="https://maps.app.goo.gl/TXNU6DGqa3mbuwY38?g_st=iw" target="_blank" id="gmapsRouteLink" class="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-lg">
           <span>Maps ↗</span>
         </a>
       </div>
@@ -684,7 +686,7 @@
           </div>
           <div>
             <h3 class="text-base sm:text-lg font-extrabold text-white">Únete al Grupo Oficial de WhatsApp</h3>
-            <p class="text-xs text-slate-300 mt-0.5">Avisos de última hora, fotos y dudas del recorrido con <strong>@AAA Luisete Hijo</strong>.</p>
+            <p class="text-xs text-slate-300 mt-0.5">Avisos de última hora, fotos y dudas del recorrido con <strong>@Luis/@Irene</strong>.</p>
           </div>
         </div>
         <a href="https://chat.whatsapp.com/E5JklGJtTzaCBhlm2iaFqh" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm shadow-lg whitespace-nowrap">
@@ -702,7 +704,7 @@
             Carrera y marcha conmemorativa anual en homenaje a Jon y en apoyo a la labor fundamental de Fundación Aladina con los niños y sus familias.
           </p>
           <div class="text-xs text-slate-500">
-            Dudas de trazado con <strong class="text-slate-300">@AAA Luisete Hijo</strong>
+            Dudas de trazado con <strong class="text-slate-300">@Luis/@Irene</strong>
           </div>
         </div>
 
@@ -900,10 +902,20 @@
 
     // iOS Safari resize & orientation handler for Leaflet
     setTimeout(() => { map.invalidateSize(); }, 300);
+    try { updateGoogleMapsLink('satellite'); } catch(e) {}
     window.addEventListener('resize', () => { map.invalidateSize(); });
     window.addEventListener('orientationchange', () => { setTimeout(() => map.invalidateSize(), 300); });
 
+    function updateGoogleMapsLink(type) {
+      var s=[40.50901,-3.70314], n=[40.51920,-3.69120], u=[40.50050,-3.71000];
+      var wp = encodeURIComponent('optimize:false|'+n[0]+','+n[1]+'|'+u[0]+','+u[1]);
+      var href = 'https://www.google.com/maps/dir/?api=1&origin='+s[0]+','+s[1]+'&destination='+s[0]+','+s[1]+'&waypoints='+wp+'&travelmode=walking';
+      if (type === 'satellite') href += '&layer=t&t=k';
+      var el = document.getElementById('gmapsRouteLink');
+      if (el) el.href = href;
+    }
     function switchMapLayer(type) {
+      updateGoogleMapsLink(type);
       if (type === 'satellite') {
         map.removeLayer(strLayer);
         satLayer.addTo(map);
