@@ -365,8 +365,8 @@
         <button onclick="locateUserGps()" id="gpsBtn" class="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-sky-400 text-xs font-bold shadow-lg">
           <span id="gpsText">📍 GPS en Vivo</span>
         </button>
-        <a href="https://maps.app.goo.gl/TXNU6DGqa3mbuwY38?g_st=iw" target="_blank" id="gmapsRouteLink" class="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-lg">
-          <span>Maps ↗</span>
+        <a href="https://www.google.com/maps/d/viewer?mid=1KLvmoEss2v3AhQ6WHwdsbsGQzlqaZlE" target="_blank" id="gmapsRouteLink" class="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-lg">
+          <span>Ruta ↗</span>
         </a>
       </div>
 
@@ -911,8 +911,7 @@
       var wp = encodeURIComponent('optimize:false|'+n[0]+','+n[1]+'|'+u[0]+','+u[1]);
       var href = 'https://www.google.com/maps/dir/?api=1&origin='+s[0]+','+s[1]+'&destination='+s[0]+','+s[1]+'&waypoints='+wp+'&travelmode=walking';
       if (type === 'satellite') href += '&layer=t&t=k';
-      var el = document.getElementById('gmapsRouteLink');
-      if (el) el.href = href;
+      var el = null; /* El boton apunta ahora al mapa de Google My Maps con el trazado exacto del circuito. */
     }
     function switchMapLayer(type) {
       updateGoogleMapsLink(type);
